@@ -1,0 +1,8 @@
+22:44:14 **** Rebuild of configuration Debug for project TP N°2 - Lab1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TrabajoPrácticoN°2-Laboratorio1.o" "..\\src\\TrabajoPrácticoN°2-Laboratorio1.c" 
+gcc -o "TP N°2 - Lab1.exe" "src\\ArrayEmployees.o" "src\\TrabajoPrácticoN°2-Laboratorio1.o" "src\\utn.o" 
+Info: Nothing to build for TP N°2 - Lab1
+Info: Nothing to build for TP N°2 - Lab1

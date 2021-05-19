@@ -1,0 +1,7 @@
+05:16:35 **** Incremental Build of configuration Debug for project TrabajoPrácticoN°1-Laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TrabajoPrácticoN°1-Laboratorio1.o" "..\\src\\TrabajoPrácticoN°1-Laboratorio1.c" 
+gcc -o TrabajoPrácticoN°1-Laboratorio1.exe "src\\TrabajoPrácticoN°1-Laboratorio1.o" "src\\operaciones.o" "src\\utn.o" 
+
+05:16:36 Build Finished. 0 errors, 0 warnings. (took 1s.180ms)
+

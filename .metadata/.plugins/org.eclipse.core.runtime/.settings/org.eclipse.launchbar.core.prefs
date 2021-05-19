@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:TrabajoPr\u00E1cticoN\u00B01-Laboratorio1.exe,org.eclipse.launchbar.core.descriptorType.default\:TP N\u00B02 - Lab1.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:TP\ N\u00B02\ -\ Lab1.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:TP\ N\u00B02\ -\ Lab1.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:TrabajoPr\u00E1cticoN\u00B01-Laboratorio1.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:TrabajoPr\u00E1cticoN\u00B01-Laboratorio1.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,0 +1,17 @@
+/*
+ ============================================================================
+ Name        : TrabajoPrácticoN°2-Laboratorio1.c
+ Author      : Brutto Ezequiel Andrés
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	puts("TrabajoPrácticoN°2-Laboratorio1"); /* prints TrabajoPrácticoN°2-Laboratorio1 */
+	return EXIT_SUCCESS;
+}
