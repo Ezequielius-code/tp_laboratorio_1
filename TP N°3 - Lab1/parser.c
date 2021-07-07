@@ -21,7 +21,7 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 	return registros;
 }
 
-int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
+int parser_EmployeeFromBinary(FILE* pFile,LinkedList* pArrayListEmployee)
 {
 	int registros = 0;
 	Employee auxEmp;

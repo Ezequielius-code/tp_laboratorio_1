@@ -34,16 +34,16 @@ int main()
     char menu[1000];
     int opcion;
 
-    snprintf(menu,sizeof(menu),"\n%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c MENU %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c"
+    snprintf(menu,sizeof(menu),"\n\n%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c MENU %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c"
     		                   "\n   1. Cargar los datos de los empleados \n     desde el archivo data.csv (modo texto)."
-    		                   "\n   2. Cargar los datos de los empleados \n     desde el archivo data.csv (modo binario)."
+    		                   "\n   2. Cargar los datos de los empleados \n     desde el archivo data.bin (modo binario)."
     		                   "\n   3. Alta de empleado"
     		                   "\n   4. Modificar datos de empleado"
     		                   "\n   5. Baja de empleado"
     		                   "\n   6. Listar empleados"
     		                   "\n   7. Ordenar empleados"
     		                   "\n   8. Guardar los datos de los empleados \n     en el archivo data.csv (modo texto)."
-    		                   "\n   9. Guardar los datos de los empleados \n     en el archivo data.csv (modo binario)."
+    		                   "\n   9. Guardar los datos de los empleados \n     en el archivo data.bin (modo binario)."
     		                   "\n   10. Salir"
     		                   "\n\n *Seleccione opci%cn: ",171,171,171,171,171,171,171,171,171,171,171,171,171,171,171,
 							   171,171,171,171,171,171,171,171,171,171,171,171,171,171,171,187,187,187,187,187,187,187,187,187,187,187,187,187,187,187,
@@ -52,7 +52,7 @@ int main()
     LinkedList* listaEmpleados = ll_newLinkedList();
     do
     {
-    	opcion = utn_getNumero(menu,"\nERROR. Se ingreso una opcion no valida.\n",1,10);
+    	utn_getNumero(&opcion,menu,"\nERROR. Se ingreso una opcion no valida.\n",1,10,100);
     	switch(opcion)
         {
             case 1:
@@ -90,20 +90,13 @@ int main()
             	{
             		printf("\nSe ha producido un error.");
             	}
-            	else
-				{
-					printf("\nEmpleado modificado exitosamente.");
-				}
             break;
             case 5:
             	if(controller_removeEmployee(listaEmpleados))
             	{
             		printf("\nSe ha producido un error.");
             	}
-            	else
-				{
-					printf("\nEmpleado dado de baja exitosamente.");
-				}
+
             break;
             case 6:
             	if(controller_ListEmployee(listaEmpleados))
@@ -116,10 +109,6 @@ int main()
             	{
             		printf("\nSe ha producido un error.");
             	}
-            	else
-				{
-					printf("\nEmpleados ordenados exitosamente.");
-				}
             break;
             case 8:
             	if(ll_isEmpty(listaEmpleados))
@@ -160,6 +149,6 @@ int main()
 
     ll_deleteLinkedList(listaEmpleados);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
